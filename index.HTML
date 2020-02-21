@@ -19,6 +19,27 @@
             color: #5aaaa6;
         }
 
+        body {
+            background-color: #f2f2f2
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+           
+        }
+        .footerStyle {
+            background-color: #666666;
+            height: 100px;
+            padding-top: 16px;
+        }
+
+        .footerAccentLine {
+            height: 5px;
+            background-color: #5aaaa6;ß
+        }
+
         /* // Extra small devices (portrait phones, less than 576px) */
         /* // No media query since this is the default in Bootstrap */
 
@@ -61,7 +82,7 @@
 
 <body>
     <div class="container">
-        <div class="row pt-5">
+        <div class="row pt-5 pb-5">
             <div class="col-sm-fluid col-md-fluid col-lg-8">
                 <div class="card">
                     <div class="card-body">
@@ -85,6 +106,16 @@
     </div>
 
 </body>
+<footer class="fixed-bottom">
+    <div class="footerAccentLine"></div>
+    <div class="footerStyle">
+        <p class="text-center text-white pt-4">© Copyright</p>
+    </div>
+</footer>
+
+<!-- Javascript -->
+<!--jQuery first, then Popper.js, then Bootstrap JS -->
+
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>
