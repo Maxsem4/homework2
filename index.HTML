@@ -7,37 +7,65 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <style>
+        .navbar-brand {
+            background-color: #5aaaa6;
+            border: 10px;
+            padding: 20px;
+        }
+
+        .card-title {
+            color: #5aaaa6;
+        }
+
+        /* // Extra small devices (portrait phones, less than 576px) */
+        /* // No media query since this is the default in Bootstrap */
+
+        /* Small devices (landscape phones, 576px and up) */
+        @media (min-width: 576px) {}
+
+        /* // Medium devices (tablets, 768px and up) */
+        @media (min-width: 768px) {
+            ...
+        }
+
+        /* // Large devices (desktops, 992px and up) */
+        @media (min-width: 992px) {
+            ...
+        }
+    </style>
     <title>About Me</title>
 </head>
 
+<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+    <a class="navbar-brand text-white" href="#">Max Semegen</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.HTML">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+    </div>
+</nav>
+
 <body>
     <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-            <a class="navbar-brand" href="#">Your Name</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.HTML">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-            </div>
-        </nav>
-        <div class="row ml-auto pt-5">
-            <div class="col-8">
+        <div class="row pt-5">
+            <div class="col-sm-fluid col-md-fluid col-lg-8">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title border-bottom">About Me</h5>
+                        <h3 class="card-title border-bottom">About Me</h3>
                         <img src="https://placehold.it/200x200" class="rounded float-left pr-3" alt="placeholder">
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of
                             the
@@ -54,7 +82,6 @@
 
             </div>
         </div>
-    </div>
     </div>
 
 </body>
